@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autooutlier"
+dynamic = ["version"]
+description = "Automatic outlier detection and handling for Python."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+authors = [
+    { name = "Suruthika C D" }
+]
+
+keywords = [
+    "outlier",
+    "outlier-detection",
+    "statistics",
+    "data-cleaning",
+    "data-science",
+    "machine-learning",
+    "preprocessing",
+    "pandas"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+dependencies = [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "scipy>=1.7.0",
+    "matplotlib>=3.4.0",
+    "seaborn>=0.11.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/suruthika-cd/autooutlier"
+Repository = "https://github.com/suruthika-cd/autooutlier"
+Documentation = "https://github.com/suruthika-cd/autooutlier/tree/main/docs"
+Issues = "https://github.com/suruthika-cd/autooutlier/issues"
+Changelog = "https://github.com/suruthika-cd/autooutlier/blob/main/CHANGELOG.md"
+
+[tool.setuptools.dynamic]
+version = { attr = "autooutlier.version.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["autooutlier*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]

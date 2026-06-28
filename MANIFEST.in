@@ -1,0 +1,28 @@
+# ------------------------------------------------------------------
+# MANIFEST.in
+# Files to include in the source distribution (sdist)
+# ------------------------------------------------------------------
+
+# Project metadata
+include LICENSE
+include README.md
+include CHANGELOG.md
+include requirements.txt
+
+# Include all package source files
+recursive-include autooutlier *.py
+
+# Include documentation
+recursive-include docs *.md
+
+# Include examples
+recursive-include examples *.py
+
+# Include tests
+recursive-include tests *.py
+
+# Exclude Python cache files
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude *.so
+global-exclude .DS_Store
