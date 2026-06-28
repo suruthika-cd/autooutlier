@@ -1,0 +1,26 @@
+site_name: AutoOutlier
+site_description: Automatic Outlier Detection and Handling for Python
+site_author: Suruthika C D
+repo_url: https://github.com/suruthika-cd/autooutlier
+repo_name: suruthika-cd/autooutlier
+
+theme:
+  name: material
+
+nav:
+  - Home: docs/index.md
+  - Quick Start: docs/quickstart.md
+  - Installation: docs/installation.md
+  - User Guide: docs/user_guide.md
+  - Detection Methods: docs/detection_methods.md
+  - Handling Methods: docs/handling_methods.md
+  - API Reference: docs/api_reference.md
+  - Examples: docs/examples.md
+  - FAQ: docs/faq.md
+  - Changelog: docs/changelog.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
