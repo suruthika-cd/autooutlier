@@ -53,7 +53,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/suruthika-cd/autooutlier"
 Repository = "https://github.com/suruthika-cd/autooutlier"
-Documentation = "https://github.com/suruthika-cd/autooutlier/tree/main/docs"
+Documentation = "https://autooutlier.readthedocs.io/"
 Issues = "https://github.com/suruthika-cd/autooutlier/issues"
 Changelog = "https://github.com/suruthika-cd/autooutlier/blob/main/CHANGELOG.md"
 
